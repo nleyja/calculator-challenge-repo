@@ -40,7 +40,7 @@ button:hover {
 
 .output-screen {
   grid-column: 1 / -1;
-  background-color: orange;
+  background-color: black;
 
   display: flex;
   justify-content: space-around;
