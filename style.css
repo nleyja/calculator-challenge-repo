@@ -13,6 +13,7 @@ body {
 button {
   cursor: pointer;
   background-color: #e6f3f6;
+  font-size: 2rem;
   margin: 2px;
 }
 
@@ -31,29 +32,32 @@ button:hover {
   display: grid;
   justify-content: center;
   align-content: center;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto)repeat(5, 100px);
 
 }
 
 .output-screen {
-  border: 2px solid red;
-  grid-column: 1/-1;
-  background-color: black;
-  color: #e6f3f6;
+  grid-column: 1 / -1;
+  background-color: orange;
+
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: flex-end;
   padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
   ;
 }
 
-.answer {
-  border: 2px solid orange;
+.output-screen .answer {
+  color: skyblue;
+  font-size: 30px;
 }
-.current-input {
-  border: 2px solid lightseagreen;
+.output-screen .current-input {
+  color: white;
+  font-size: 30px;
 }
 
