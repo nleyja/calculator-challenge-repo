@@ -54,10 +54,9 @@ button:hover {
   padding: 15px;
   word-wrap: break-word;
   word-break: break-all;
-  ;
 }
 
-.output-screen .current-input {
+.current-input {
   color: white;
   font-size: 30px;
 }

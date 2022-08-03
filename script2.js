@@ -1,27 +1,25 @@
-// variables
+const numButtons = document.querySelectorAll(".num-button");
+const operButtons = document.querySelectorAll(".oper-button");
+const equalButton = document.querySelector(".equal-button");
+const outputDisplay = document.querySelector(".screen-output")
 
-// const numButtons = document.getElementsByClassName("num-buttons");
-// const clearButton = document.getElementsByClassName("clear-button");
-// const equalButton = document.getElementsByClassName("equal-button");
-// const operButton = document.getElementsByClassName("oper-button");
-// const ouputDisplay = document.getElementsByClassName("screen-output");
+const handleNumbers = (event) => {
+  outputDisplay.innerHTML += event.target.innerHTML;
+};
 
-//const numButtons = document.querySelectorAll("num-buttons");
+for (let i = 0; i < numButtons.length; i++) {
+  numButtons[i].addEventListener("click", handleNumbers);
+};
 
-const numOneButton = document.querySelector("#one");
-const ouputDisplay = document.querySelectorAll(".screen-output");
+const handleOperators = () => {
+outputDisplay.innerHTML = operButtons.innerHTML;
 
+};
 
-
-const handleNumOne = () => {
-  ouputDisplay.innerHTML = numOneButton.innerHTML;
+const handleEqualButton = () => {
+// equal button will equate values in output display
   
 };
 
-
-numOneButton.addEventListener("click", handleNumOne);
-
-console.log(ouputDisplay.innerHTML);
-
-
-
+operButtons.addEventListener("click", handleOperators);
+equalButton.addEventListener("click", handleEqualButton);
