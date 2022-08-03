@@ -16,11 +16,11 @@ for (let i = 0; i < operButtons.length; i++) {
   operButtons[i].addEventListener("click", handleAllButtons);
 };
 
-// const handleClearButton = () => {
-//   outputDisplay.innerHTML = " ";
-// };
+const handleClearButton = () => {
+  outputDisplay.innerHTML = " ";
+};
 
-// clearButton.addEventListener("click", handleClearButton);
+clearButton.addEventListener("click", handleClearButton);
 
 // const handleEqualButton = () => {
 //   outputDisplay.innerHTML = 
