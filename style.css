@@ -17,7 +17,12 @@ button {
   margin: 2px;
 }
 
-.two-space {
+.clear-button {
+  grid-column: span 2;
+  background-color: #4e619b;
+}
+
+.equal-button {
   grid-column: span 2;
   background-color: #4e619b;
 }
@@ -52,10 +57,6 @@ button:hover {
   ;
 }
 
-.output-screen .answer {
-  color: skyblue;
-  font-size: 30px;
-}
 .output-screen .current-input {
   color: white;
   font-size: 30px;
