@@ -11,12 +11,12 @@ let calculateButton
 
 const handleNumButtons = (event) => {
   outputDisplay.innerHTML += event.target.innerHTML;
-  
 };
 
 for (let i = 0; i < numButtons.length; i++) {
   numButtons[i].addEventListener("click", handleNumButtons);
 };
+
 
 const handleOperButtons = (event) => {
   outputDisplay.innerHTML += event.target.innerHTML;
@@ -37,6 +37,7 @@ const handleCalculateButton = (event) => {
 };
 
 equalButton.addEventListener("click", handleCalculateButton);
+
 
 const handleClearButton = () => {
   outputDisplay.innerHTML = " ";
