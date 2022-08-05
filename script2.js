@@ -45,11 +45,23 @@ const handleClearButton = () => {
 clearButton.addEventListener("click", handleClearButton);
 
 
+const finalEquation = () => {
+  if(operatorSign == "+") {
+    outputDisplay.innerHTML = Number(fistInputNumber) + Number(secondInputNumber);
+   } else if (operatorSign == "-") {
+    outputDisplay.innerHTML = Number(fistInputNumber) - Number(secondInputNumber);
+   } else if (operatorSign == "*") {
+    outputDisplay.innerHTML = Number(fistInputNumber) * Number(secondInputNumber);
+   } else if (operatorSign == "÷") {
+    outputDisplay.innerHTML = Number(fistInputNumber) / Number(secondInputNumber);
+   } else {
+    outputDisplay.innerHTML = "error"
+   }
+};
 
+equalButton.addEventListener("click", finalEquation);
 
-//  if(operatorSign == "+") {
-  //   result = fistInputNumber + secondInputNumber;
-  //  }
+    
 
 
 // const handleEqualButton = () => {
