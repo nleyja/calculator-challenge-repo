@@ -60,14 +60,3 @@ const finalEquation = () => {
 };
 
 equalButton.addEventListener("click", finalEquation);
-
-    
-
-
-// const handleEqualButton = () => {
-// // equal button will equate values in output display
-  
-// };
-
-// operButtons.addEventListener("click", handleAllButtons);
-// equalButton.addEventListener("click", handleEqualButton);
